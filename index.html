@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Instagram Feed Clone</title>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome for Icons -->
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <!-- External CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white shadow-sm p-3">
+        <div class="container-fluid">
+            <div class="d-flex align-items-center">
+                <i class="fa-brands fa-instagram fa-xl"></i>
+                <h5 class="ms-2 mb-0">Instagram</h5>
+            </div>
+            <div class="d-flex">
+                <button type="button" class="btn btn-success me-2" data-bs-toggle="modal" data-bs-target="#createPostModal">
+                    + Create Post
+                </button>
+                <button class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                    <i class="fa-solid fa-gear"></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                    <li><a class="dropdown-item" href="#">Profile</a></li>
+                    <li><a class="dropdown-item" href="#">Settings</a></li>
+                    <li><a class="dropdown-item text-danger" href="#">Logout</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Toggle Buttons (Grid / List) -->
+    <ul class="nav nav-tabs justify-content-center mt-3" id="viewTabs" role="tablist">
+        <li class="nav-item">
+            <a class="nav-link active" id="grid-tab" data-bs-toggle="tab" href="#gridView" role="tab">
+                <i class="fa-solid fa-th"></i>
+            </a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" id="list-tab" data-bs-toggle="tab" href="#listView" role="tab">
+                <i class="fa-solid fa-bars"></i>
+            </a>
+        </li>
+    </ul>
+
+    <!-- Tab Content -->
+    <div class="tab-content p-3">
+
+        <!-- GRID VIEW (3 images per row) -->
+        <div class="tab-pane fade show active" id="gridView" role="tabpanel">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=1" class="img-fluid grid-img"></div>
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=2" class="img-fluid grid-img"></div>
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=3" class="img-fluid grid-img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=4" class="img-fluid grid-img"></div>
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=5" class="img-fluid grid-img"></div>
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=6" class="img-fluid grid-img"></div>
+                </div>
+                <div class="row">
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=7" class="img-fluid grid-img"></div>
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=8" class="img-fluid grid-img"></div>
+                    <div class="col-md-4 p-1"><img src="https://picsum.photos/300/300?random=9" class="img-fluid grid-img"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- LIST VIEW (One image per row, showing all 9 images) -->
+        <div class="tab-pane fade" id="listView" role="tabpanel">
+            <div class="container">
+                <div class="post border rounded mb-3">
+                    <h5>Post Title 1</h5>
+                    <img src="https://picsum.photos/600/400?random=1" class="img-fluid">
+                    <p>204 Likes • Description of the post.</p>
+                </div>
+                <div class="post border rounded mb-3">
+                    <h5>Post Title 2</h5>
+                    <img src="https://picsum.photos/600/400?random=2" class="img-fluid">
+                    <p>850 Likes • Another great image.</p>
+                </div>
+                <div class="post border rounded mb-3">
+                    <h5>Post Title 3</h5>
+                    <img src="https://picsum.photos/600/400?random=3" class="img-fluid">
+                    <p>1,530 Likes • Some caption text here.</p>
+                </div>
+                <div class="post border rounded mb-3">
+                    <h5>Post Title 4</h5>
+                    <img src="https://picsum.photos/600/400?random=4" class="img-fluid">
+                    <p>1,200 Likes • More content.</p>
+                </div>
+                <div class="post border rounded mb-3">
+                    <h5>Post Title 5</h5>
+                    <img src="https://picsum.photos/600/400?random=5" class="img-fluid">
+                    <p>650 Likes • Nice landscape.</p>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Bootstrap JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

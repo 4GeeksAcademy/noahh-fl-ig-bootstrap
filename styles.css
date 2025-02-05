@@ -1,0 +1,47 @@
+body {
+    background-color: #fafafa;
+}
+
+/* Navbar */
+.navbar {
+    border-bottom: 1px solid #ddd;
+}
+
+/* Toggle Buttons */
+.nav-tabs .nav-link {
+    color: gray;
+    font-size: 20px;
+}
+
+.nav-tabs .nav-link.active {
+    color: blue;
+}
+
+/* Grid Image Styling */
+.grid-img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* List View */
+.post {
+    background: white;
+    padding: 100px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+/* Ensure images in list view are centered */
+.post {
+    background: white;
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;  /* Centers text and inline elements */
+}
+
+.post img {
+    display: block;       /* Ensures it's treated as a block element */
+    margin: 0 auto;       /* Centers image horizontally */
+    max-width: 100%;      /* Prevents overflow */
+    border-radius: 5px;   /* Keeps styling consistent */
+}
